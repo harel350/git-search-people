@@ -1,0 +1,11 @@
+.userSocialContainer{
+    background-color: #F6F8FF;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+    border-radius: 12px;
+}
+.box{
+    text-align: center;
+    padding: 5px;
+}
