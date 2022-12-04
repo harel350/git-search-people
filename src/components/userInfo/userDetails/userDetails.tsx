@@ -1,3 +1,4 @@
+import UserAddress from "../userAddress/userAddress";
 import UserBio from "../userBio/userBio";
 import '../userDetails/userDetails.css'
 import UserNameContainer from '../userNameContainer/userNameContainer'
@@ -12,6 +13,7 @@ export default function userDetails() {
             <UserNameContainer />
             <UserBio />
             <UserSocial />
+            <UserAddress/>
         </div>
     )
 }
