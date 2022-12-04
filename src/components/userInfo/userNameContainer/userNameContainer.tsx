@@ -1,12 +1,14 @@
-import React from "react";
+import { useContext } from "react";
+import { Context } from '../../../Context'
 
 import '../userNameContainer/userNameContainer.css'
-interface UserNameContainerProps {
-    userData: any,
-}
 
-const UserNameContainer: React.FC<UserNameContainerProps> = ({ userData }) => {
+
+export default function UserNameContainer() {
+    let userData = useContext(Context)
+    userData = userData.userData
     const dataFormat = new Date(userData.created_at).toDateString()
+
     return (
         <div className="userNameContainer">
             <div className="userNameBox">
@@ -20,4 +22,3 @@ const UserNameContainer: React.FC<UserNameContainerProps> = ({ userData }) => {
     )
 }
 
-export default UserNameContainer

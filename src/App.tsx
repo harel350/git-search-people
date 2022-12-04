@@ -1,22 +1,24 @@
-import React,{useState} from 'react';
+import { useState } from 'react';
 import SearchBox from './components/searchBox/searchBox';
 import UserInfo from './components/userInfo/userInfo';
 import './App.css';
+import { Context } from './Context'
 
 function App() {
-  const [userData,setUserData] = useState({})
+  const [userData, setUserData] = useState({})
+
   function onSearchHandle(userData: object) {
     setUserData(userData)
     console.log(userData)
   }
   return (
-    
-    <div className="App">
-      <SearchBox onSearch={onSearchHandle} />
-    
-        <UserInfo userData={userData}/>
-    </div>
-    
+    <Context.Provider value={{ userData }}>
+      <div className="App">
+        <SearchBox onSearch={onSearchHandle} />
+        <UserInfo />
+      </div>
+    </Context.Provider>
+
   );
 }
 
