@@ -1,21 +1,16 @@
-import React from "react";
 import UserImage from './userImage/userImage'
 
 import '../userInfo/userInfo.css'
 import UserDetails from "./userDetails/userDetails";
 
 
-interface UserInfoProps {
-    userData: any,
-}
 
-const UserInfo: React.FC<UserInfoProps> = ({ userData }) => {
+ export default function UserInfo(){
     return (
         <div className="userInfoContainer">
-            <UserImage imageUrl={userData.avatar_url} />
-            <UserDetails userData={userData}/>
+            <UserImage/>
+            <UserDetails />
         </div>
     )
 }
 
-export default UserInfo
