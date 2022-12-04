@@ -12,8 +12,8 @@ export default function UserNameContainer() {
     return (
         <div className="userNameContainer">
             <div className="userNameBox">
-                <h2>{userData.name}</h2>
-                <h4>{userData.login}</h4>
+                <h1>{userData.name}</h1>
+                <h3>{userData.login}</h3>
             </div>
             <div>
                 <span>join at {dataFormat}</span>
