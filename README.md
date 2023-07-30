@@ -45,10 +45,17 @@ git clone https://github.com/harel350/git-search-people.git
 cd git-search-people
 ```
 
-3. Run 'npm install'.
+3. Install the required dependencies using npm:
 
-4. Run 'npm start'
+```bash
+npm install
+```
 
+4. Start the development server:
+
+```bash
+npm start
+```
 That's it! You should now be able to use the application on your local machine.
 
 ## Contributing
